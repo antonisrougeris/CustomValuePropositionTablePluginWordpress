@@ -14,6 +14,8 @@ A powerful, easy-to-use WordPress plugin that helps you showcase your product's 
 
 🔗 **Plugin Page:** [Competition Value Proposition Table Plugin WordPress](https://blupry.io/wordpress/ui/competition-value-proposition-table-plugin-wordpress/)
 
+🔗 **Live Demo:** [Test the Plugin Here](https://bluprycs.wpcomstaging.com/valuepropositiontableplugin/)
+
 ---
 
 ## 📦 What’s Included
@@ -69,4 +71,3 @@ This plugin is:
 - ✔️ No developer required!
 
 ---
-
