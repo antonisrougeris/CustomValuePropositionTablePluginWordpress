@@ -1,0 +1,200 @@
+:root {
+    --bct-color: #0047ff;
+    --bct-radius: 14px;
+    --bct-font-size: 16px;
+    --bct-header-bg: #6e00ff;
+    --bct-row-bg: rgba(255, 255, 255, 0.6);
+    --bct-bg-color: #ffffff;
+    --bct-text-color: #1a1a1a;
+    --bct-border-color: rgba(0, 0, 0, 0.05);
+    --bct-hover-bg: #f8f8f8;
+    --bct-hover-text: #000000;
+    --bct-header-font-size: 18px;
+    --bct-cell-padding: 16px;
+    --bct-row-separator: solid;
+
+    
+  }
+  
+  /* Wrapper */
+  .bct-table-wrapper {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 32px;
+    background: var(--bct-bg-color);
+    border-radius: var(--bct-radius);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    transition: all 0.4s ease;
+  }
+  
+  /* Title */
+  .bct-table-wrapper h2 {
+    font-size: calc(var(--bct-font-size) + 8px);
+    font-weight: 700;
+    color: var(--bct-color);
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  /* Table */
+  .bct-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: var(--bct-font-size);
+    color: var(--bct-text-color);
+    border-radius: var(--bct-radius);
+    overflow: hidden;
+  }
+  
+  /* Header */
+  .bct-table thead th {
+    background: var(--bct-header-bg);
+    color: white;
+    padding: 18px 24px;
+    text-align: left;
+    font-weight: 700;
+    font-size: var(--bct-header-font-size);
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  .bct-table thead th:last-child {
+    border-right: none;
+  }
+  
+  /* Rows */
+  .bct-table tbody tr {
+    background-color: var(--bct-row-bg);
+    border-bottom: 1px var(--bct-row-separator) var(--bct-border-color);
+    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .bct-table tbody tr:hover {
+    background: var(--bct-hover-bg);
+    color: var(--bct-hover-text);
+    z-index: 2;
+  }
+  
+  /* Hover animations */
+  .bct-table[data-hover="zoom"] tbody tr:hover {
+    transform: scale(1.02);
+  }
+  
+  .bct-table[data-hover="scale"] tbody tr:hover {
+    transform: scale(1.05);
+  }
+  
+  .bct-table[data-hover="shadow"] tbody tr:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .bct-table[data-hover="none"] tbody tr:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  /* Cells */
+  .bct-table td {
+    padding: var(--bct-cell-padding);
+    vertical-align: middle;
+    color: var(--bct-text-color);
+    position: relative;
+    transition: background 0.3s ease;
+  }
+  
+  /* Icons */
+  .bct-icon {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .bct-table td:first-child:hover .bct-icon {
+    filter: grayscale(0%);
+    transform: rotate(6deg) scale(1.1);
+  }
+  
+  /* Mobile Layout */
+  @media (max-width: 768px) {
+    .bct-table thead {
+      display: none;
+    }
+  
+    .bct-table tbody tr {
+      display: block;
+      margin-bottom: 20px;
+      border-radius: var(--bct-radius);
+      background: var(--bct-row-bg);
+      overflow: hidden;
+      padding: 10px;
+    }
+  
+    .bct-table td {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 18px;
+      border-bottom: 1px solid #eaeaea;
+    }
+  
+    .bct-table td:last-child {
+      border-bottom: none;
+    }
+  
+    .bct-table td::before {
+      content: attr(data-label);
+      font-weight: 600;
+      color: var(--bct-color);
+      flex: 1;
+      padding-right: 10px;
+    }
+  
+    .bct-table td {
+      flex: 1;
+    }
+  }
+  
+  /* Animation Types */
+  .bct-table-wrapper[data-animation="fade"] {
+    animation: fadeIn 0.8s ease-in-out both;
+  }
+  
+  .bct-table-wrapper[data-animation="slide"] {
+    animation: slideIn 0.8s ease-in-out both;
+  }
+  
+  .bct-table-wrapper[data-animation="zoom"] {
+    animation: zoomIn 0.8s ease-in-out both;
+  }
+  
+  .bct-table-wrapper[data-animation="bounce"] {
+    animation: bounceIn 0.8s ease-in-out both;
+  }
+  
+  /* Keyframes */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  @keyframes bounceIn {
+    0% { opacity: 0; transform: scale(0.3); }
+    50% { transform: scale(1.05); }
+    70% { transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  

@@ -1,0 +1,20 @@
+Commercial License
+
+This plugin is a commercial product developed and owned by Blupry (https://blupry.io). All rights reserved.
+
+You are granted a non-exclusive, non-transferable license to use the plugin on websites you own or develop for clients, under the terms outlined below.
+
+You may:
+- Use this plugin in personal or commercial projects.
+- Modify the source code for personal use or client work.
+- Include the plugin in a website for a client.
+
+You may not:
+- Redistribute, resell, sublicense, or share the plugin or any part of its code in any form.
+- Host the plugin files publicly (e.g., GitHub or file-sharing services).
+- Use the Blupry brand assets in a misleading way.
+
+For questions, support, or extended commercial licensing (for SaaS, resale, etc.), contact: bluprycs@gmail.com
+
+Website: https://blupry.io
+© Blupry – All rights reserved.
