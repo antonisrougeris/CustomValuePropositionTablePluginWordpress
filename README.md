@@ -12,6 +12,8 @@ A powerful, easy-to-use WordPress plugin that helps you showcase your product's 
 ✅ **Ready-to-use ZIP plugin file** – import directly into your WordPress dashboard  
 ✅ **Works with all WordPress themes**
 
+🔗 **Plugin Page:** [Competition Value Proposition Table Plugin WordPress](https://blupry.io/wordpress/ui/competition-value-proposition-table-plugin-wordpress/)
+
 ---
 
 ## 📦 What’s Included
@@ -68,11 +70,3 @@ This plugin is:
 
 ---
 
-## 🔗 Links
-
-- **GitHub Repository:** https://github.com/antonisrougeris/CustomValuePropositionTablePluginWordpress
-- **Plugin Page:** https://blupry.io/wordpress/ui/competition-value-proposition-table-plugin-wordpress/
-
----
-
-Enjoy using the plugin! ⭐
