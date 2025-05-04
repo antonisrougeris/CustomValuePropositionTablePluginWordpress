@@ -2,7 +2,7 @@
 
 A powerful, easy-to-use WordPress plugin that helps you showcase your product's benefits vs. competitors with a clean, dynamic comparison table.
 
-![Competition Value Proposition Table Plugin](https://github.com/antonisrougeris/CustomValuePropositionTablePluginWordpress/assets/banner-image.png)
+![Competition Value Proposition Table Plugin](https://res.cloudinary.com/dcato1y8g/image/upload/v1746374475/s2vmnwi5mo0g94thqhct.jpg)
 
 ## 🚀 Overview
 
